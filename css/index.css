@@ -1,0 +1,437 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* 內减模式 */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 42px;
+    /* background-color: pink; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    float: left;
+}
+
+.nav {
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a {
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.search {
+    float: left;
+    margin-left: 59px;
+    width: 412px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+}
+
+.search input {
+    float: left;
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;
+    border: none;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 38px;
+    border: 0;
+    background-image: url(../image/btn.png);
+}
+
+.user {
+    float: right;
+    margin-right: 35px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img {
+    vertical-align: middle;
+}
+
+/* 轮播图 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../image/banner2.png);
+}
+
+.banner .left {
+    float: left;
+    padding: 0 20px;
+    width: 190px;
+    height: 420px;
+    background-color: rgb(0, 0, 0, 0.3);
+    line-height: 48px;
+}
+
+.banner .left span {
+    float: right;
+}
+
+.banner .left a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.banner .left a:hover {
+    color: #00a4ff;
+}
+
+.banner .right {
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.banner .right h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.banner .right .content {
+    padding: 0 18px;
+}
+
+.banner .right .content dl {
+    padding: 14px 0;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.banner .right .content dt {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+.banner .right .content dd {
+    font-size: 12px;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+.banner .right .more {
+    display: block;
+    margin: 4px auto 0;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 40px;
+}
+
+.goods {
+    margin-top: 8px;
+    padding-left: 32px;
+    padding-right: 24px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+    line-height: 60px;
+}
+
+.goods h2 {
+    float: left;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 500;
+}
+
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods li a {
+    border-left: 1px solid #bfbfbf;
+    padding: 0 30px;
+    color: #050505;
+}
+
+.goods .xingqu {
+    float: right;
+    font-size: 10px;
+    color: #00a4ff;
+}
+
+.course {
+    margin-top: 30px;
+}
+
+.course .title {
+    height: 40px;
+    background-color: #4e4e4e;
+}
+
+.course .title h2 {
+    float: left;
+    padding: 0 32px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #00a4ff;
+}
+
+.course .title a {
+    float: right;
+    padding: 0 25px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+
+.course .content li {
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: rgb(255, 245, 231);
+    box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+}
+
+.course .content li:nth-child(5n) {
+    margin-right: 0%;
+}
+
+.course .content li h3 {
+    padding: 20px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.course .content li p {
+    padding: 0 20px;
+    font-size: 10px;
+    color: #999999;
+}
+
+.course .content li p span {
+    font-size: 12px;
+    color: #ff7c2d;
+}
+
+
+.middle {
+    margin-top: 30px;
+    height: 40px;
+    background-color: #4e4e4e;
+}
+
+.middle .title h2 {
+    float: left;
+    padding: 0 32px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #00a4ff;
+}
+
+.middle .title ul {
+    float: left;
+    margin-left: 240px;
+}
+
+.middle .title li {
+    float: left;
+    padding: 0 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #bfbfbf;
+}
+
+.middle .title li:hover {
+    background-color: rgb(0, 165, 0);
+}
+
+.middle .title li:first-child {
+    margin-left: none;
+}
+
+.middle .title a {
+    float: right;
+    padding: 0 25px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+
+.middle .article {
+    margin-top: 15px;
+}
+
+.middle aside {
+    float: left;
+    width: 228px;
+    height: 392px;
+    background-image: url(../image/left.jpg);
+}
+
+.middle section {
+    float: left;
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+
+.middle section nav {
+    width: 957px;
+    height: 100px;
+    background-image: url(../image/top.jpg);
+}
+
+
+
+.middle .article ul li {
+    float: left;
+    margin-right: 12px;
+    margin-top: 22px;
+    width: 227px;
+    height: 260px;
+    box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+}
+
+.course .content li:last-child {
+    margin-right: none;
+}
+
+.foot {
+    height: 420px;
+    background-color: #fff;
+    clear: both;
+}
+
+.foot .last .left {
+    float: left;
+}
+
+.foot .last .left {
+    padding-top: 33px;
+}
+
+.foot .last .right {
+    padding-top: 33px;
+}
+
+.foot .last .left .logo {
+    width: 220px;
+    height: 60px;
+}
+
+.foot .last .left .introduce {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.foot .last .left .download {
+    width: 120px;
+	height: 36px;
+	border: solid 1px #00a4ff;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.foot .last .left .download a {
+    color: #00a4ff;
+}
+
+.foot .last .right {
+    float: right;
+}
+
+.foot .last .right .about {
+    margin: 0 50px 0 100px;
+    float: left;
+}
+
+.foot .last .right .about h2 {
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.foot .last .right .about a {
+    font-size: 12px;
+    color: #333333;
+}
